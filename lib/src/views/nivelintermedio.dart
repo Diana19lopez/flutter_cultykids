@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:cultykids/src/views/leccion1basico.dart';
-import 'package:cultykids/src/views/leccion2basico.dart';
-import 'package:cultykids/src/views/leccion3basico.dart';
+import 'package:cultykids/src/views/leccion1inter.dart';
+import 'package:cultykids/src/views/leccion2inter.dart';
+import 'package:cultykids/src/views/leccion3inter.dart';
 
-class Nivelbasico extends StatefulWidget{
+class Nivelintermedio extends StatefulWidget{
   @override
   State<StatefulWidget> createState() {
-    return _NivelbasicoState();
+    return _NivelintermedioState();
   }
 }
 
-class _NivelbasicoState extends State<Nivelbasico>{
+class _NivelintermedioState extends State<Nivelintermedio>{
   @override
   Widget build(BuildContext context) {
     
@@ -26,13 +26,13 @@ class _NivelbasicoState extends State<Nivelbasico>{
               Image.asset('assets/img/culty.png', width: 300.0, height: 150.0,
               ),
               Text.rich (
-                TextSpan( text: 'Nivel Básico',
+                TextSpan( text: 'Nivel Intermedio',
                           style: TextStyle( decorationStyle: TextDecorationStyle.solid,
                           fontSize: 25, color: Colors.red[900],
                           decoration: TextDecoration.underline, 
                 ),   
                 ),),
-          Text ('¿Conozco mi País?',
+          Text ('¿ Cuánto se de mi país ?  ',
                 style: TextStyle(fontSize: 20, color: Colors.black, 
                 fontStyle: FontStyle.italic,
                 ),),
@@ -49,7 +49,7 @@ class _NivelbasicoState extends State<Nivelbasico>{
                 ),
                 onPressed: (){
                   Navigator.push( context, 
-                    MaterialPageRoute(builder: (context) => Leccion1basico()));
+                    MaterialPageRoute(builder: (context) => Leccion1inter()));
                 }
               ),
             ],
@@ -64,7 +64,7 @@ class _NivelbasicoState extends State<Nivelbasico>{
                 ),
               onPressed: (){
                 Navigator.push( context, 
-                    MaterialPageRoute(builder: (context) => Leccion2basico()));
+                    MaterialPageRoute(builder: (context) => Leccion2interView()));
               }
           ),
           RaisedButton(
@@ -77,11 +77,11 @@ class _NivelbasicoState extends State<Nivelbasico>{
                 ),
               onPressed: (){
                 Navigator.push( context, 
-                    MaterialPageRoute(builder: (context) => Leccion3basico()));
+                    MaterialPageRoute(builder: (context) => Leccion3interView()));
               }
           ),
               
-              new Image.asset('assets/img/basico.png', width: 150.0, height: 150.0,
+              new Image.asset('assets/img/bandera.png', width: 150.0, height: 150.0,
                  ),  
         ]
       ),
@@ -89,4 +89,3 @@ class _NivelbasicoState extends State<Nivelbasico>{
     );     
   }  
 }
-         

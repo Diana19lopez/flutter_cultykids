@@ -1,15 +1,19 @@
-import 'package:cultykids/src/views/nivelbasico.dart';
+import 'package:cultykids/src/views/home_view.dart';
 import 'package:flutter/material.dart';
 
+class MyApp extends StatelessWidget {
 
-class MyApp extends StatelessWidget{
+ @override
+ Widget build(BuildContext context) {
+   return MaterialApp( debugShowCheckedModeBanner: false,
+     home: HomeView()
 
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp( debugShowCheckedModeBanner: false,
-      home: Nivelbasico()
-    );
-  }
-  
-}    
-    
+     
+   ); // MaterialApp
+ }
+
+}
+
+
+
+//en la terminal se escribe flutter pub get

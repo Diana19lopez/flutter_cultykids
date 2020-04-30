@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cultykids/src/views/nivel.dart';
 
 class ResultadoView extends StatefulWidget{
   @override
@@ -25,7 +26,19 @@ class _ResultadoViewState extends State<ResultadoView>{
             Text('   Has pasado al siguiente nivel!  ', style: TextStyle(fontSize: 25, color: Color.fromARGB(415, 315, 415, 300)),  ), //titulo centra
             
             new Image.asset('assets/img/feliz.png', width:200.0, height:200.0), //imagen 2
-
+                RaisedButton(
+                color: Colors.white60,
+                textColor: Colors.blueAccent,
+                child: Text('CONTINUAR',
+                style: TextStyle(
+                  fontSize: 20.0,
+                ),
+                ),
+                onPressed: (){
+                  Navigator.push( context, 
+                    MaterialPageRoute(builder: (context) => NivelView()));
+                }
+              )
            
           ],
         ),

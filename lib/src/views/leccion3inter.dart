@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:cultykids/src/views/leccion3inter.dart';
-  
- class Leccion3View extends StatefulWidget{
+import 'package:cultykids/src/views/evaluacioninter.dart';
+
+ class Leccion3interView extends StatefulWidget{
   @override
-  _Leccion3ViewState createState()=> _Leccion3ViewState();
+  _Leccion3interViewState createState()=> _Leccion3interViewState();
 }
-class _Leccion3ViewState extends State<Leccion3View>{
+class _Leccion3interViewState extends State<Leccion3interView>{
   
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class _Leccion3ViewState extends State<Leccion3View>{
         child: Column(  
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-           new Image.asset('assets/img/logo.png', width:200.0, height:200.0, //imagen 1
+           new Image.asset('assets/img/logo.png', width:100.0, height:100.0, //imagen 1
            ),
              Text.rich(      
               TextSpan(  text: ' LECCION 3',   
@@ -71,9 +71,21 @@ class _Leccion3ViewState extends State<Leccion3View>{
              child: Text('QUIUBO: Expresión de saludo, para preguntar sobre algo.'),    
               alignment: Alignment.centerLeft,   
               constraints:  BoxConstraints.tightForFinite(  width: 400, ),),
-          new Image.asset('icons/pais.jpg', width:250.0, height:250.0, //imagen 1
+          new Image.asset('assets/img/aaa.png ', width:100.0, height:100.0, //imagen 1
            ),
-         
+          RaisedButton(
+                                color: Colors.white60,
+                                textColor: Colors.blueAccent,
+                                child: Text('Juego de Aprendizaje',
+                                style: TextStyle(
+                                fontSize: 15.0,
+                                ),
+                                ),
+                                onPressed: (){
+                                    Navigator.push( context, 
+                                        MaterialPageRoute(builder: (context) => Evaluacioninter()));
+                }
+              )
            
           ],
         ),

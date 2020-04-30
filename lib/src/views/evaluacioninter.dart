@@ -4,11 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:cultykids/src/views/resultado.dart';
 
-class Evaluacionbasico extends StatefulWidget {
+
+class Evaluacioninter extends StatefulWidget {
   @override
-  _EvaluacionbasicoState  createState() => _EvaluacionbasicoState();
+  _EvaluacioninterState  createState() => _EvaluacioninterState();
 }
-class _EvaluacionbasicoState extends State<Evaluacionbasico> {
+
+class _EvaluacioninterState extends State<Evaluacioninter> {
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +33,7 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   margin: EdgeInsets.all(03.0),
                   padding: EdgeInsets.all(05.0),
                  child:
-                Text(' 1- ¿Cual es el cultivo que permitió las relaciones sociales entre los campesinos?'),
+                Text(' 1- ¿Cuáles de estos platillos son salvadoreños?'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -39,19 +41,19 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   new RaisedButton(
                     color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Cacao',
+                    child: Text('Fiambre',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                     RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Maíz',
+                    child: Text('Pupusas',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                      RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Caña',
+                    child: Text('Camarones',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),  
                 ],
@@ -59,7 +61,7 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
               Container(
                 margin: EdgeInsets.all(03.0),
                 padding: EdgeInsets.all(05.0),
-                child: Text(' 2- ¿Qué Municipio cuenta con las artesanias creadas con barro?'),
+                child: Text(' 2- ¿Qué expresión se utiliza para saludar a un amigo?'),
               ),
               Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -67,19 +69,19 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   new RaisedButton(
                     color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Usulután',
+                    child: Text('Quiubo',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                     RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Ilobasco',
+                    child: Text('Achis',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                      RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Santa Ana',
+                    child: Text('Bicho',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),  
                 ],
@@ -87,7 +89,7 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
               Container(
                 margin: EdgeInsets.all(03.0),
                 padding: EdgeInsets.all(05.0),
-                child: Text(' 3- ¿Asociación que promueve las artes plásticas y proyectos culturales?'),
+                child: Text(' 3- ¿Cómo se le llama el tipo de danza que se baila en El Salvador?'),
               ),
               Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -95,19 +97,19 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   new RaisedButton(
                     color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Indes',
+                    child: Text('Folklore',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                     RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('ADAPES',
+                    child: Text('Salsa',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                      RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('ISTU',
+                    child: Text('Reggaetón',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),  
                 ],
@@ -125,8 +127,10 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   Navigator.push( context, 
                     MaterialPageRoute(builder: (context) => ResultadoView()));
                 }
-              ) 
-        ]
+              ),
+              Divider( color: Colors.white,),
+               
+            ],
       ),
     ),
     );

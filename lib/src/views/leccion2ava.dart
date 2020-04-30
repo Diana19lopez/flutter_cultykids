@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
   
-  
- class Leccion2interView extends StatefulWidget{
+  class Leccion2avaView extends StatefulWidget{
   @override
-  _Leccion2interViewState createState()=> _Leccion2interViewState();
+  _Leccion2avaViewState createState()=> _Leccion2avaViewState();
 }
-class _Leccion2interViewState extends State<Leccion2interView>{
+class _Leccion2avaViewState extends State<Leccion2avaView>{
   
   @override
   Widget build(BuildContext context) {
@@ -14,16 +13,17 @@ class _Leccion2interViewState extends State<Leccion2interView>{
       backgroundColor: Colors.white, //fondo completo de pantalla
       appBar: AppBar(
        backgroundColor: Color(0xFFFF1744), //color a la barra principal de arriba (rojo
-       //titulo en la barra de arriba
+      
       
       ),
       body: Center(
         child: Column(  
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-           new Image.asset('assets/img/logo.png', width:100.0, height:100.0, //imagen 1
-           ),
-             Text.rich(      
+            new Image.asset('assets/img/logo.png', width:100.0, height:100.0, //imagen 1
+            ),
+             //titulo central
+           Text.rich(      
               TextSpan(  text: ' LECCION 2',   
              style: TextStyle(  fontSize: 30, 
              color: Color.fromARGB(510, 660, 00, 910),
@@ -34,7 +34,7 @@ class _Leccion2interViewState extends State<Leccion2interView>{
         ),  
                    //titulo central
               const SizedBox(height: 20),
-            Text(' Tema: Folklore Salvadoreño   ',
+            Text(' Tema: Simbolos patrios ',
              style: TextStyle(fontSize: 20, 
              color: Color.fromARGB(900, 75, 00, 10),
               fontStyle: FontStyle.normal,
@@ -43,14 +43,12 @@ class _Leccion2interViewState extends State<Leccion2interView>{
              const SizedBox(height: 20),
            
            Container(    
-             child: Text('El folklore de El Salvador, o sus expresiones culturales populares, comparte rasgos comunes con la región mesoamericana. En El Salvador, la presencia de las civilizaciones ancestrales de los Mayas, Toltecas, Nahuas -entre otras-, dejaron su presencia en muchos de los aspectos de la vida cotidiana de la región.'),    
+             child: Text('Los símbolos patrios representan un aspecto importante de los países. Un símbolo es una representación de un concepto que permite establecer una relación con conceptos como la libertad, el orgullo de una nación, la integridad, la fortaleza y otros. Cada nación selecciona elementos que identifican su cultura y patrimonio, que dan forma a su identidad.'),    
               alignment: Alignment.center,   
               constraints:  BoxConstraints.tightForFinite(  width: 380, ),),
-         
-          new Image.asset('assets/img/fol.png ', width:100.0, height:100.0, //imagen 1
-           ),  
           
-
+            new Image.asset('assets/img/sim.png', width:150.0, height:150.0, //imagen 1
+            ),
            
           ],
         ),

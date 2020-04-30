@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-
-import 'evaluacionbasico.dart';
-
+import 'package:cultykids/src/views/evaluacionbasico.dart';
 
 class Leccion3basico extends StatefulWidget {
   @override
   _Leccion3basicoState  createState() => _Leccion3basicoState();
 }
-
 class _Leccion3basicoState extends State<Leccion3basico> {
   @override 
   Widget build(BuildContext context) {
@@ -54,7 +51,7 @@ class _Leccion3basicoState extends State<Leccion3basico> {
                                 ),
                                 onPressed: (){
                                     Navigator.push( context, 
-                                    MaterialPageRoute(builder: (context) => Evaluacionbasico()));
+                                        MaterialPageRoute(builder: (context) => Evaluacionbasico()));
                 }
               )
           ],

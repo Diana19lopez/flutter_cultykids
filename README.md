@@ -1,6 +1,6 @@
 # cultykids
 
-A new Flutter project.
+Plataforma para niñez Salvadoreña
 
 ## Getting Started
 

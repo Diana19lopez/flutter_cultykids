@@ -3,12 +3,13 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:cultykids/src/views/resultado.dart';
+import 'package:cultykids/src/views/puntaje_final.dart';
 
-class Evaluacionbasico extends StatefulWidget {
+class Evaluacionava extends StatefulWidget {
   @override
-  _EvaluacionbasicoState  createState() => _EvaluacionbasicoState();
+  _EvaluacionavaState  createState() => _EvaluacionavaState();
 }
-class _EvaluacionbasicoState extends State<Evaluacionbasico> {
+class _EvaluacionavaState extends State<Evaluacionava> {
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,13 +26,13 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                     style: TextStyle( decorationStyle: TextDecorationStyle.solid,
                     fontSize: 18, color: Colors.red[900],  
                 ),),
-              Image.asset('assets/img/logo.png', width: 200.0, height: 150.0,
+              Image.asset('assets/img/logo.png', width: 75.0, height: 75.0,
               ),
               Container(
                   margin: EdgeInsets.all(03.0),
                   padding: EdgeInsets.all(05.0),
                  child:
-                Text(' 1- ¿Cual es el cultivo que permitió las relaciones sociales entre los campesinos?'),
+                Text(' 1- ¿Qué tipos de juegos no pertenecen a El salvador??'),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -39,19 +40,19 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   new RaisedButton(
                     color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Cacao',
+                    child: Text('Canicas',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                     RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Maíz',
+                    child: Text('Basquetbol',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                      RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Caña',
+                    child: Text('Trompos',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),  
                 ],
@@ -59,7 +60,7 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
               Container(
                 margin: EdgeInsets.all(03.0),
                 padding: EdgeInsets.all(05.0),
-                child: Text(' 2- ¿Qué Municipio cuenta con las artesanias creadas con barro?'),
+                child: Text(' 2- ¿Cuántas banderas tiene el escudo del Salvador?'),
               ),
               Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -67,19 +68,19 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   new RaisedButton(
                     color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Usulután',
+                    child: Text('14',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                     RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Ilobasco',
+                    child: Text('5',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                      RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Santa Ana',
+                    child: Text('8',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),  
                 ],
@@ -87,7 +88,7 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
               Container(
                 margin: EdgeInsets.all(03.0),
                 padding: EdgeInsets.all(05.0),
-                child: Text(' 3- ¿Asociación que promueve las artes plásticas y proyectos culturales?'),
+                child: Text(' 3- ¿Cuáles de estas tradiciones se celebran en Semana Santa?'),
               ),
               Row(
                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -95,19 +96,19 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   new RaisedButton(
                     color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('Indes',
+                    child: Text('Alfombras',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                     RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('ADAPES',
+                    child: Text('Dia de la cruz',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),
                      RaisedButton(
                       color: Colors.white60,
                     textColor: Colors.black,
-                    child: Text('ISTU',
+                    child: Text('Vacaciones agostinas',
                     style: TextStyle(fontSize: 12.0,),),
                     onPressed: (){}),  
                 ],
@@ -125,7 +126,20 @@ class _EvaluacionbasicoState extends State<Evaluacionbasico> {
                   Navigator.push( context, 
                     MaterialPageRoute(builder: (context) => ResultadoView()));
                 }
-              ) 
+              ), 
+RaisedButton(
+                color: Colors.white60,
+                textColor: Colors.blueAccent,
+                child: Text('Resultados',
+                style: TextStyle(
+                  fontSize: 25.0,
+                ),
+                ),
+                onPressed: (){
+                  Navigator.push( context, 
+                    MaterialPageRoute(builder: (context) => Puntaje_finalView())); 
+                },
+              ),
         ]
       ),
     ),
